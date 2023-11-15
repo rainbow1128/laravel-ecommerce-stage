@@ -14,7 +14,7 @@
                </div>
                <div class="detail-box">
                   <h5>
-                     Your text that informs customers about this section...
+                     Bienvenue dans notre univers d'accessoires, où chaque détail raconte une histoire. Explorez nos produits conçus pour compléter votre style de vie avec élégance et fonctionnalité....
                   </h5>
                </div> 
          </div>
@@ -22,7 +22,7 @@
             <div class="box">
                <div class="option_container">
                   <div class="options">     
-                     <a href="" class="option2">
+                     <a href="#product" class="option2">
                      See all
                      </a>
                   </div>
@@ -41,7 +41,7 @@
             <div class="box">
                <div class="option_container">
                   <div class="options">     
-                     <a href="" class="option2">
+                     <a href="#product" class="option2">
                      See all
                      </a>
                   </div>
@@ -60,7 +60,7 @@
             <div class="box">
                <div class="option_container">
                   <div class="options">     
-                     <a href="" class="option2">
+                     <a href="#product" class="option2">
                      See all
                      </a>
                   </div>
@@ -79,7 +79,7 @@
             <div class="box">
                <div class="option_container">
                   <div class="options">     
-                     <a href="" class="option2">
+                     <a href="#product" class="option2">
                      See all
                      </a>
                   </div>
@@ -96,7 +96,7 @@
          </div>      
       </div>
       <div class="btn-box">
-         <a href="">
+         <a href="#product">
          View All products
          </a>
       </div>

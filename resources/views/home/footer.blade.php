@@ -1,10 +1,11 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <footer class="footer_section" style="background-color: black">
    <div class="container">
       <div class="row">
          <div class="col-md-4">
              <div class="full">
                 <div class="logo_footer">
-                  <a href="#"><img width="100" src="images/lo1.png" alt="LOGO" /></a>
+                  <a href="#"><img width="100" src="images/kay.png" alt="LOGO" /></a>
                   <div class="information_f">
                      <p>Exclusive offers and first access to products..</p>
                    </div>
@@ -63,7 +64,15 @@
                   </ul>
                </div>
             </div>
+           
+               <div class="links"  style="margin-top: 20px; justify-content: center;">
+                 <a href="#" style="color: white"><i class="fab fa-facebook" ></i></a>
+                 <a href="#" style="color: white"><i class="fab fa-instagram"></i></a>
+                 <a href="#" style="color: white"><i class="fab fa-youtube"></i></a>
+                 <a href="#" style="color: white"><i class="fab fa-twitter"></i></a>
+                 <a href="#" style="color: white"><i class="fab fa-linkedin"></i></a>
                </div>
+               
             </div>
             </div>
          </div>

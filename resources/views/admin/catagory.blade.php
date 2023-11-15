@@ -17,6 +17,13 @@
         color: black;
     }
 
+    .center {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        border: 3px solid black;
+    }
+
     </style>
 
 </head>
@@ -55,6 +62,20 @@
                             value="Add Catagory">
                           </form>
                       </div>
+                      <table class="center">
+                        <tr>
+                        <td>Catagory Name</td>  
+                        <td>Action</td>  
+                        </tr>    
+
+                        <tr>
+                            <td>Toys</td>  
+                            <td>
+                             <a class="btn btn-danger" href=""></a>    
+                            </td>  
+                            </tr>  
+
+                    </table> 
                   </div>
                 </div>
             

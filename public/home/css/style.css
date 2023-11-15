@@ -5,7 +5,6 @@
     margin-right: 10px;
   }
 
-
 * {
   box-sizing: border-box;
 }
@@ -134,6 +133,7 @@ a:focus {
 .header_section .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
+  
 }
 
 .navbar-brand {
@@ -163,6 +163,8 @@ a:focus {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     font-weight: 700;
+    gap: 50px;
+    justify-content: space-around;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link svg {
@@ -186,6 +188,10 @@ a:focus {
   padding: 0;
   border: none;
   color: #000000;
+}
+
+.custom_nav-container .nav-item  {
+ gap: 20px;
 }
 
 .custom_nav-container .nav_search-btn:hover {
@@ -1124,7 +1130,5 @@ form input[type="submit"]:focus {
     font-weight: 400;
 }
 
-http://kute-themes.com/html/boutique/html/index.html
-https://template.hasthemes.com/noraure/noraure/index.html
-https://preview.hasthemes.com/xoss-preview/xoss/index.html
+
 

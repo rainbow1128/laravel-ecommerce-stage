@@ -5,7 +5,7 @@
              <div class="col-md-6 offset-md-3">
                 <div class="subscribe_form ">
                    <div class="heading_container heading_center">
-                      <h3>NOUVEAU SUR KAY DAFAROU ?</h3>
+                      <h3>NOUVEAU SUR KAY DEFAROU </h3>
                    </div>
                    <p>
                      Inscrivez-vous à nos communications pour recevoir nos meilleures offres!</p>

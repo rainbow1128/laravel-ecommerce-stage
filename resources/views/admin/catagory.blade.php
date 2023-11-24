@@ -21,7 +21,8 @@
         margin: auto;
         width: 50%;
         text-align: center;
-        border: 3px solid black;
+        margin-top: 30px;
+        border: 3px solid white;
     }
 
     </style>
@@ -32,7 +33,7 @@
           <!-- Sidebar -->
           @include('admin.Sidebar')
           <!-- Sidebar -->
-          <div id="content-wrapper" class="d-flex flex-column">
+          <div id="content-wrapper" class="d-flex flex-column" style="background-color: black">
             <div id="content">
               <!-- TopBar -->
              @include('admin.header')
@@ -41,14 +42,18 @@
               
                 <div class="main-panel">
                   <div class="content-wrapper">
-                    @if (session()->has('massage'))
+
+                    @if(session()->has('massage'))
+
                     <div class="alert alert-success">
                         <button type="button" class="close" data-dismiss="alert
                         " aria-hidden="true">X</button>
+
                         {{session()->get('message')}}
                     </div>
                         
                     @endif
+
                       <div class="div_center">
                           <h1 class="h2_font">add catagory</h1>
 
@@ -68,12 +73,17 @@
                         <td>Action</td>  
                         </tr>    
 
+                          @foreach ($data as $data)
+                              
                         <tr>
-                            <td>Toys</td>  
+                            <td>{{$data->catagory_name}}</td>  
                             <td>
-                             <a class="btn btn-danger" href=""></a>    
+                             <a onclick="return confirm('Are You Sure To Delete This')" class="btn btn-danger" href="
+                             {{url('delete_catagory',$data->id)}}">Delete</a>    
                             </td>  
                             </tr>  
+
+                            @endforeach
 
                     </table> 
                   </div>

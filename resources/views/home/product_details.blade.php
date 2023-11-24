@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
+    <base href="/public">
       <!-- Basic -->
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,28 +27,53 @@
          <!-- header section strats -->
          @include('home.header')
          <!-- end header section -->
-         <!-- slider section -->
-        @include('home.slider')
-         <!-- end slider section -->
-      </div>
-      <!-- why section -->
-      @include('home.catagory')
-      <!-- end why section -->
-      
-      <!-- arrival section -->
-      @include('home.new_arrival')
-      <!-- end arrival section -->
-      
-      <!-- product section -->
-      @include('home.product')
-      <!-- end product section -->
+   
 
-      <!-- subscribe section -->
-      @include('home.subscribe')
-      <!-- end subscribe section -->
-      <!-- client section -->
-      @include('home.client')
-      <!-- end client section -->
+      <div class="col-sm-6 col-md-4 col-lg-4" style="margin: auto; width:50%; padding:30px">
+       
+           <div class="img-box" style="padding:20px; margin: 45px;">
+              <img src="product/{{$product->image}}" alt="">
+           </div>
+           <div class="detail-box">
+              <h5>
+                 {{$product->title}}
+              </h5>
+
+              @if($product->discount_price!=null)
+                  
+              <h6 style="color: red;">
+                 Discount price
+                 {{$product->discount_price}}CFA
+              </h6>
+
+              <h6 style="text-decoration: line-through; color:blue;">
+                 {{$product->price}}CFA
+              </h6>
+
+                 @else
+
+              <h6 style="color: blue;"> 
+                 price
+                 <br>
+                 {{$product->price}}CFA
+              </h6>
+              
+              @endif
+
+
+              <h6>Product Catagory : {{$product->catagory}}</h6>
+
+              <h6>Product Description : {{$product->description}}</h6>
+
+              <h6>Product Quantity : {{$product->quantity}}</h6>
+
+            <a href="" class="btn btn-primary">Add to card</a>
+           </div>
+        </div>
+      </div>
+     
+
+     
       <!-- footer start -->
       @include('home.footer')
       <!-- footer end -->

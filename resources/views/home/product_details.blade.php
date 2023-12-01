@@ -32,7 +32,7 @@
       <div class="col-sm-6 col-md-4 col-lg-4" style="margin: auto; width:50%; padding:30px">
        
            <div class="img-box" style="padding:20px; margin: 45px;">
-              <img src="product/{{$product->image}}" alt="">
+              <img src="product/{{$product->image}}" alt="" style="height: 300px">
            </div>
            <div class="detail-box">
               <h5>
@@ -46,14 +46,14 @@
                  {{$product->discount_price}}CFA
               </h6>
 
-              <h6 style="text-decoration: line-through; color:blue;">
+              <h6 style="text-decoration: line-through; color: #C6866B;">
                  {{$product->price}}CFA
               </h6>
 
                  @else
 
-              <h6 style="color: blue;"> 
-                 price
+              <h6 style="color: #C6866B;"> 
+                Prx
                  <br>
                  {{$product->price}}CFA
               </h6>
@@ -67,7 +67,27 @@
 
               <h6>Product Quantity : {{$product->quantity}}</h6>
 
-            <a href="" class="btn btn-primary">Add to card</a>
+            {{-- <a href="" class="btn btn-primary">Add to card</a> --}}
+
+            <form action="{{url('add_cart',$product->id )}}"
+               method="Post">
+
+              @csrf
+
+              <div class="row">
+
+                 <div class="col-md-4">
+              <input type="number" name="quantity" 
+              value="1" min="1" style="width: 70px; height: 40px;">
+           </div>
+
+           <div class="col-md-4">
+              <input type="submit" value="Add to card" style="background-color: #C6866B; border-radius: 20px"> 
+        </div>
+     
+        </div>
+     </form>
+
            </div>
         </div>
       </div>

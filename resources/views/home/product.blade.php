@@ -16,9 +16,26 @@
                      <a href="{{url('product_details',$products->id)}}" class="option1">
                      Product Details
                      </a>
-                     <a href="" class="option2">
-                     Buy Now
-                     </a>
+                     
+                     <form action="{{url('add_cart',$products->id )}}"
+                         method="Post">
+
+                        @csrf
+
+                        <div class="row">
+
+                           <div class="col-md-4">
+                              
+                        <input type="number" name="quantity" 
+                        value="1" min="1" style="width: 100px; border-radius: 10px;">
+                     </div>
+
+                     <div class="col-md-4">
+                        <input type="submit" value="Add to card" class="option1" style="border-radius: 20px; height: 40px;"> 
+                  </div>
+               
+                  </div>
+               </form>
                   </div>
                </div>
                <div class="img-box">
@@ -33,17 +50,20 @@
                       
                   <h6 style="color: red;">
                      Discount price
+                     <br>
                      {{$products->discount_price}}CFA
                   </h6>
 
-                  <h6 style="text-decoration: line-through; color:blue;">
+                  <h6 style="text-decoration: line-through; color: #C6866B; ">
+                     Prix
+                     <br>
                      {{$products->price}}CFA
                   </h6>
 
                      @else
 
-                  <h6 style="color: blue;"> 
-                     price
+                  <h6 style="color: #C6866B;"> 
+                     Prix
                      <br>
                      {{$products->price}}CFA
                   </h6>
